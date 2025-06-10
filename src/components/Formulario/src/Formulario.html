@@ -6,7 +6,7 @@
             <form @submit.prevent="enviar">
             <!--nombre-->
                 <div class="form-group">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre Completo</label>
                     <input id="nombre" type="text" class="form-control w-50" v-model.trim="persona.nombre" @input="formDirty.nombre=true">
                 </div>
                 <div v-if="errorNombre.mostrar" class="alert alert-danger my-1">
